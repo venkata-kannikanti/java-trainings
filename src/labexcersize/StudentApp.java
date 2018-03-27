@@ -24,7 +24,10 @@ class StudentCreate{
 	private String name;
 	private String SSN;
 	private String email;
-	public String courses = "";
+	private String phone;
+	private String city;
+	private String state;
+	private String courses = "";
 	private static final int costOfCourse = 800;
 	private int balance = 0;
 	
@@ -74,4 +77,29 @@ class StudentCreate{
 	public String toString() {
 		return "[Name : " + name + "]\n[Courses: " + courses +"]\n[Balance :" + balance +"]";
 	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+	
 }
